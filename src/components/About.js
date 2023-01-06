@@ -7,6 +7,7 @@ import { BsArrowRight } from 'react-icons/bs'
 import CUSTOMIZE from "../assets/img/customize.png";
 import ENJOY from "../assets/img/enjoy.png";
 import PAYMENT from "../assets/img/payment.png";
+import Abt from './Abt';
 //============================>>>>>>>>>>>>>>>>
 
 
@@ -46,33 +47,34 @@ export default function About() {
 
     return (
         <>
-            <div className="md:h-[100vh] bg-gray relative">
-                <div className="w-[85vw] mx-auto pt-10  h-full">
+            <div className="h-[100vh] bg-gray relative border border-red">
+                <div className="w-[85vw] mx-auto pt-10">
                     <div>
                         <h1 className='font-extrabold text-[2em] md:text-5xl text-center mx-auto mb-3'>How it works</h1>
                         <p className='text-xl md:text-xl text-center mx-auto'>Offering the best self service, you need to shop for your champ.</p>
                     </div>
                     {/* Cards */}
-                    <div className="grid md:grid-cols-3 gap-10 text-center w-[70vw] mx-auto mt-10">
+                    <div className="grid md:grid-cols-3 gap-10 text-center md:w-[70vw] mx-auto mt-10 absolute z-20 left-0 right-0">
                         {
                             CARDS.map((CARD, i) => {
                                 return (
-                                    <div className='p-10 bg-white rounded-lg' key={i}>
+                                    <div className='pb-10 px-10 bg-white rounded-lg flex flex-col  justify-between' key={i}>
                                         <div className='flex flex-col gap-1'>
-                                            <img src={CARD.src} alt="png" className='w-25' />
-                                            <p>step {CARD.step}</p>
-                                            <p className='font-bold'>{CARD.title}</p>
-                                            <p>{CARD.caption}</p>
+                                            <img src={CARD.src} alt="png" className='w-52 mx-auto' />
                                         </div>
-                                        <NavLink to='#' className='border border-red text-white bg-red py-2 rounded-lg flex items-center gap-2 md:mx-auto text-center justify-center mt-10'>Customize a Bundle now <BsArrowRight fontSize={'1.2em'} /></NavLink>
+                                        <p>step {CARD.step}</p>
+                                        <p className='font-bold'>{CARD.title}</p>
+                                        <p>{CARD.caption}</p>
+                                        <NavLink to='#' className='border border-red text-white bg-red py-2 px-4 rounded-lg flex items-center gap-2 md:mx-auto text-center justify-center mt-10'>Customize a Bundle now <BsArrowRight fontSize={'1.2em'} /></NavLink>
                                     </div>
                                 )
                             })
                         }
                     </div>
                 </div>
-                <div className="w-100 bg-pink h-[20em] absolute bottom-0 z-20"></div>
+                <div className="w-100 bg-pink h-56 bottom-0 z-10 absolute w-full"></div>
             </div>
+            {/* <Abt /> */}
         </>
     )
 }
