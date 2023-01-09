@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 // Icons =====================>>>>>>>>>>>>>>>>
 import { FiShoppingCart } from "react-icons/fi";
 import { RxPerson } from "react-icons/rx";
@@ -7,6 +7,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 //=============================>>>>>>>>>>>>>>>
 // Images ====================>>>>>>>>>>>>>>>>
 import Logo from "../assets/img/logo.png";
+import { Button } from './Button';
 //============================>>>>>>>>>>>>>>>>
 
 export default function Navbar() {
@@ -23,8 +24,8 @@ export default function Navbar() {
                 </div>
                 {/* Buttons */}
                 <div className="gap-5 hidden md:flex">
-                    <NavLink to='#' className='border border-red text-red py-2 px-10 rounded-lg font-bold flex items-center gap-2'>Cart <FiShoppingCart fontSize={'1.2em'} /></NavLink>
-                    <NavLink to='#' className='border border-red text-white bg-red py-2 px-10 rounded-lg font-bold flex items-center gap-2'>Login <RxPerson fontSize={'1.2em'} /></NavLink>
+                    <Button value={'Cart'} icon={<FiShoppingCart />} type='outlined' />
+                    <Button value={'Login'} icon={<RxPerson />} />
                 </div>
             </div>
         </div>

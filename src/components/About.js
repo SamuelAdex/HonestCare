@@ -7,7 +7,8 @@ import { BsArrowRight } from 'react-icons/bs'
 import CUSTOMIZE from "../assets/img/customize.png";
 import ENJOY from "../assets/img/enjoy.png";
 import PAYMENT from "../assets/img/payment.png";
-import Abt from './Abt';
+import RECTANGLE from "../assets/img/rectangle.png";
+import { Header } from './Header';
 //============================>>>>>>>>>>>>>>>>
 
 
@@ -47,14 +48,13 @@ export default function About() {
 
     return (
         <>
-            <div className="h-[100vh] bg-gray relative border border-red">
+            <div className="h-full md:h-screen bg-gray relative pb-10">
+                {/* Background */}
+                <img src={RECTANGLE} alt="" className='md:absolute bottom-0 w-screen' />
                 <div className="w-[85vw] mx-auto pt-10">
-                    <div>
-                        <h1 className='font-extrabold text-[2em] md:text-5xl text-center mx-auto mb-3'>How it works</h1>
-                        <p className='text-xl md:text-xl text-center mx-auto'>Offering the best self service, you need to shop for your champ.</p>
-                    </div>
+                    <Header title={'How it works'} subtitle={'Offering the best self service, you need to shop for your champ.'} />
                     {/* Cards */}
-                    <div className="grid md:grid-cols-3 gap-10 text-center md:w-[70vw] mx-auto mt-10 absolute z-20 left-0 right-0">
+                    <div className="grid md:grid-cols-3 gap-10 text-center md:w-[70vw] mx-auto mt-10 md:absolute z-20 left-0 right-0">
                         {
                             CARDS.map((CARD, i) => {
                                 return (
@@ -65,16 +65,14 @@ export default function About() {
                                         <p>step {CARD.step}</p>
                                         <p className='font-bold'>{CARD.title}</p>
                                         <p>{CARD.caption}</p>
-                                        <NavLink to='#' className='border border-red text-white bg-red py-2 px-4 rounded-lg flex items-center gap-2 md:mx-auto text-center justify-center mt-10'>Customize a Bundle now <BsArrowRight fontSize={'1.2em'} /></NavLink>
+                                        <NavLink to='#' className='border border-red text-white bg-red py-2 px-4 rounded-lg flex items-center gap-2 md:mx-auto text-center justify-center mt-10'>{CARD.btnText} <BsArrowRight fontSize={'1.2em'} /></NavLink>
                                     </div>
                                 )
                             })
                         }
                     </div>
                 </div>
-                <div className="w-100 bg-pink h-56 bottom-0 z-10 absolute w-full"></div>
             </div>
-            {/* <Abt /> */}
         </>
     )
 }
