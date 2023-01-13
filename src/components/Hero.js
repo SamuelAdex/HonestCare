@@ -15,13 +15,15 @@ import { Button } from './Button';
 
 export default function Hero() {
     return (
-        <div className='h-[75vh] md:h-[110vh] max-w-screen bg-pink pt-20 relative'>
-            <div className="w-[85vw] mx-auto pt-10 absolute z-20 left-0 right-0">
-                <Header title={'Your new champs deserves a new concept of comfort'} subtitle={'More than just for diapers and wipes, you are in for the big savings too!'} />
-                <Button value={'Customize a Bundle now'} className=' w-[300px] flex items-center gap-2 py-3 mx-auto' icon={<BsArrowRight />} />
-            </div>
+        <div className='h-[100vh] md:h-[110vh] max-w-screen bg-pink pt-20 relative'>
             {/* Hero image */}
             <img src={heroImg} alt="heroImg" className='absolute bottom-0 md:w-[80%] md:right-[10em] z-20' />
+
+            <div className="w-[85vw] mx-auto pt-10 absolute z-20 left-0 right-0">
+                <Header title={'Your new champs deserves a new concept of comfort'} subtitle={'More than just for diapers and wipes, you are in for the big savings too!'} />
+                <Button value={'Customize a Bundle now'} className='mt-20 md:mt-0 w-[300px] flex items-center gap-2 py-3 md:mx-auto' icon={<BsArrowRight />} />
+            </div>
+
             {/* Backgrounds blobs */}
             <img src={BottomBlobs} alt="" className='absolute bottom-0 z-10' />
             <img src={Blob1} alt="" className='absolute top-56 z-10' />

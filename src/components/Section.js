@@ -7,7 +7,7 @@ export const Section = ({ image, content, btnText, onClick, type, backGround }) 
     return (
         type === 'imgLeft' ?
             <div className={`${backGround} block py-20`}>
-                <div className="w-[70vw] mx-auto h-full">
+                <div className="md:w-[70vw] w-[85vw] mx-auto h-full">
                     <div className="grid md:grid-cols-2 items-center gap-10 md:gap-0">
                         <div>
                             <img src={image} alt="" />
@@ -26,7 +26,7 @@ export const Section = ({ image, content, btnText, onClick, type, backGround }) 
             </div>
             :
             <div className={`${backGround} block py-20`}>
-                <div className="w-[70vw] mx-auto h-full">
+                <div className="md:w-[70vw] w-[85vw] mx-auto h-full">
                     <div className="md:grid md:grid-cols-2 flex-col-reverse flex items-center gap-10 md:gap-0">
 
                         <div className='md:pr-36'>

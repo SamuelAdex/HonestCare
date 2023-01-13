@@ -29,7 +29,7 @@ export default function Footer() {
 
     return (
         <div className='w-full border-t pt-10'>
-            <div className="w-[80vw] mx-auto h-full flex items-center pb-10">
+            <div className="w-[80vw] mx-auto h-full md:flex md:flex-row flex-col gap-3 md:gap-0 text-center justify-center flex items-center pb-10">
                 <div>
                     <img src={Logo} alt="" />
                 </div>

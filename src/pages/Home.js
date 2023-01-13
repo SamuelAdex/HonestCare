@@ -32,7 +32,7 @@ export default function Home() {
                 onClick={click}
             />
 
-            <div className='pt-10'>
+            <div className='pt-10 w-[85vw] md:w-[90vw] mx-auto '>
                 <Header title={'What am i getting in a bundle?'} />
                 <Section
                     image={BOX}

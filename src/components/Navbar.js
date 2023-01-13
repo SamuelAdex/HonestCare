@@ -9,8 +9,8 @@ import { AiOutlineMenu } from "react-icons/ai";
 import Logo from "../assets/img/logo.png";
 import { Button } from './Button';
 //============================>>>>>>>>>>>>>>>>
-
-export default function Navbar() {
+   
+export default function Navbar() {            
     return (
         <div className='w-screen fixed z-50'>
             <div className="flex align-middle items-center justify-between py-3 w-[85vw] mx-auto">
