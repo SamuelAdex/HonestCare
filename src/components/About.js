@@ -1,15 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-// Icons ====================>>>>>>>>>>>>>>>>
 import { BsArrowRight } from 'react-icons/bs'
-//============================>>>>>>>>>>>>>>>>
-// Images ====================>>>>>>>>>>>>>>>>
 import CUSTOMIZE from "../assets/img/customize.png";
 import ENJOY from "../assets/img/enjoy.png";
 import PAYMENT from "../assets/img/payment.png";
 import RECTANGLE from "../assets/img/rectangle.png";
 import { Header } from './Header';
-//============================>>>>>>>>>>>>>>>>
 
 
 export default function About() {
