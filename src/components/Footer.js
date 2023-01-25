@@ -1,9 +1,35 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import {
+    AiOutlineTwitter,     
+    AiOutlineInstagram,
+    AiOutlineGithub
+} from "react-icons/ai";
+import {
+    GrFacebookOption
+} from 'react-icons/gr';
 import Logo from "../assets/img/logo.png";
 
 
 export default function Footer() {
+    const SOCIAL_LINKS = [
+        {
+            id: 1,
+            icon: <AiOutlineTwitter />
+        },
+        {
+            id: 2,
+            icon: <GrFacebookOption />
+        },
+        {
+            id: 3,
+            icon: <AiOutlineInstagram />
+        },
+        {
+            id: 4,
+            icon: <AiOutlineGithub />
+        }
+    ];
     const FOOTER_LINKS = [
         {
             id: 1,
@@ -33,7 +59,7 @@ export default function Footer() {
                 <div>
                     <img src={Logo} alt="" />
                 </div>
-                <ul className='flex items-center w-full justify-between'>
+                <ul className='md:flex items-center w-full md:justify-between'>
                     <li className='w-full flex justify-evenly'>
                         {
                             FOOTER_LINKS.map((LINKS, i) => {
@@ -43,6 +69,15 @@ export default function Footer() {
                                     </NavLink>
                                 )
                             })
+                        }
+                    </li>
+                    <li className="flex justify-evenly w-full mt-4">
+                        {
+                            SOCIAL_LINKS.map((link)=>(
+                                <NavLink className="rounded-full shadow-md p-2 bg-red text-white" to="" key={link.id} >
+                                    {link.icon}
+                                </NavLink>
+                            ))
                         }
                     </li>
                 </ul>
