@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
 // Icons ====================>>>>>>>>>>>>>>>>
 import { BsArrowRight } from 'react-icons/bs'
 //============================>>>>>>>>>>>>>>>>
@@ -21,7 +20,7 @@ export default function Hero() {
 
             <div className="w-[85vw] mx-auto pt-10 absolute z-20 left-0 right-0">
                 <Header title={'Your new champs deserves a new concept of comfort'} subtitle={'More than just for diapers and wipes, you are in for the big savings too!'} />
-                <Button value={'Customize a Bundle now'} className='mt-20 md:mt-0 w-[300px] flex items-center gap-2 py-3 md:mx-auto' icon={<BsArrowRight />} />
+                <Button value={'Customize a Bundle now'} path="/brand" className='mt-20 md:mt-0 w-[300px] flex items-center gap-2 py-3 md:mx-auto' icon={<BsArrowRight />} />
             </div>
 
             {/* Backgrounds blobs */}
