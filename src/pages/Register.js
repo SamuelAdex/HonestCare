@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Navbar from '../components/Navbar';
 import GOOGLE from '../assets/img/Google svg.svg'
 import {Button} from '../components/Button'
