@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs'
 import CUSTOMIZE from "../assets/img/customize.png";
 import ENJOY from "../assets/img/enjoy.png";
@@ -55,13 +55,13 @@ export default function About() {
                             CARDS.map((CARD, i) => {
                                 return (
                                     <div className='pb-10 px-10 bg-white rounded-lg flex flex-col  justify-between' key={i}>
-                                        <div className='flex flex-col gap-1'>
+                                        <div className='flex flex-col gap-10'>
                                             <img src={CARD.src} alt="png" className='w-52 mx-auto' />
                                         </div>
-                                        <p>step {CARD.step}</p>
+                                        <p>Step {CARD.step}</p>
                                         <p className='font-bold'>{CARD.title}</p>
                                         <p>{CARD.caption}</p>
-                                        <NavLink to='#' className='border border-red text-white bg-red py-2 px-4 rounded-lg flex items-center gap-2 md:mx-auto text-center justify-center mt-10'>{CARD.btnText} <BsArrowRight fontSize={'1.2em'} /></NavLink>
+                                        <Link to='/brand' className='border border-red text-white bg-red py-2 px-4 rounded-lg flex items-center gap-2 md:mx-auto text-center justify-center mt-10 text-[16px]'>{CARD.btnText} <BsArrowRight fontSize={'1.2em'} /></Link>
                                     </div>
                                 )
                             })

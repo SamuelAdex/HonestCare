@@ -21,6 +21,7 @@ export default function Home() {
 
             <Section
                 backGround={'bg-pink'}
+                className="mt-20"
                 type={'imgLeft'}
                 image={MOTHER}
                 content={'A new mom will experience a roller-coaster of emotions—extreme happiness, frustration, exhaustion, heart-bursting love. At this time what she needs is support navigating the early tasks and emotions of parenthood and recovering from birth'}
