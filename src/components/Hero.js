@@ -14,7 +14,7 @@ import { Button } from './Button';
 
 export default function Hero() {
     return (
-        <div className='h-[100vh] md:h-[110vh] max-w-screen bg-pink pt-20 relative'>
+        <div className='h-[100vh] md:h-[130vh] max-w-screen bg-pink pt-20 relative'>
             {/* Hero image */}
             <img src={heroImg} alt="heroImg" className='absolute bottom-0 md:w-[80%] md:right-[10em] z-20' />
 
