@@ -19,13 +19,13 @@ const Size = ()=>{
                     <Button value="Select Brand To Buy From" icon={<BsArrowLeft fontSize="1.3rem" />} className="bg-black flex-row-reverse font-normal border-black" />
                 </div>
                 <div className="mt-20 flex justify-center pb-20">
-                    <div className="grid grid-cols-3 w-[80%] gap-3">
+                    <div className="grid md:grid-cols-3 grid-cols-2 w-[80%] gap-3 mb-10">
                         <div className="flex flex-col items-center">
                             <img src={pam1} alt="" />
                             <small className="">Size: 1</small>
                             <h1 className="font-bold text-xl">0-3 kg</h1>
                             <p>32 Diapers Per Pack</p>  
-                            <div className="bg-white rounded-xl p-2 flex justify-between items-center w-full font-bold text-xl mt-2 w-[50%]">
+                            <div className="bg-white rounded-xl p-2 flex justify-between items-center w-full font-bold text-xl mt-2 md:w-[50%]">
                                 <span className="cursor-pointer">-</span>
                                 <span className="">0</span>
                                 <span className="cursor-pointer">+</span>
@@ -36,7 +36,7 @@ const Size = ()=>{
                             <small className="">Size: 1</small>
                             <h1 className="font-bold text-xl">0-3 kg</h1>
                             <p>32 Diapers Per Pack</p>  
-                            <div className="bg-white rounded-xl p-2 flex justify-between items-center w-full font-bold text-xl mt-2 w-[50%]">
+                            <div className="bg-white rounded-xl p-2 flex justify-between items-center w-full font-bold text-xl mt-2 md:w-[50%]">
                                 <span className="cursor-pointer">-</span>
                                 <span className="">0</span>
                                 <span className="cursor-pointer">+</span>
@@ -47,7 +47,7 @@ const Size = ()=>{
                             <small className="">Size: 1</small>
                             <h1 className="font-bold text-xl">0-3 kg</h1>
                             <p>32 Diapers Per Pack</p>  
-                            <div className="bg-white rounded-xl p-2 flex justify-between items-center w-full font-bold text-xl mt-2 w-[50%]">
+                            <div className="bg-white rounded-xl p-2 flex justify-between items-center w-full font-bold text-xl mt-2 md:w-[50%]">
                                 <span className="cursor-pointer">-</span>
                                 <span className="">0</span>
                                 <span className="cursor-pointer">+</span>
@@ -58,7 +58,7 @@ const Size = ()=>{
                             <small className="">Size: 1</small>
                             <h1 className="font-bold text-xl">0-3 kg</h1>
                             <p>32 Diapers Per Pack</p>  
-                            <div className="bg-white rounded-xl p-2 flex justify-between items-center w-full font-bold text-xl mt-2 w-[50%]">
+                            <div className="bg-white rounded-xl p-2 flex justify-between items-center w-full font-bold text-xl mt-2 md:w-[50%]">
                                 <span className="">-</span>
                                 <span className="">0</span>
                                 <span className="">+</span>
@@ -69,7 +69,7 @@ const Size = ()=>{
                             <small className="">Size: 1</small>
                             <h1 className="font-bold text-xl">0-3 kg</h1>
                             <p>32 Diapers Per Pack</p>  
-                            <div className="bg-white rounded-xl p-2 flex justify-between items-center w-full font-bold text-xl mt-2 w-[50%]">
+                            <div className="bg-white rounded-xl p-2 flex justify-between items-center w-full font-bold text-xl mt-2 md:w-[50%]">
                                 <span className="cursor-pointer">-</span>
                                 <span className="">0</span>
                                 <span className="cursor-pointer">+</span>
@@ -80,7 +80,7 @@ const Size = ()=>{
                             <small className="">Size: 1</small>
                             <h1 className="font-bold text-xl">0-3 kg</h1>
                             <p>32 Diapers Per Pack</p>  
-                            <div className="bg-white rounded-xl p-2 flex justify-between items-center w-full font-bold text-xl mt-2 w-[50%]">
+                            <div className="bg-white rounded-xl p-2 flex justify-between items-center w-full font-bold text-xl mt-2 md:w-[50%]">
                                 <span className="cursor-pointer">-</span>
                                 <span className="">0</span>
                                 <span className="cursor-pointer">+</span>

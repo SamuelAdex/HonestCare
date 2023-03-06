@@ -7,6 +7,9 @@ import Brand from './pages/Brand'
 import Size from './pages/Size'
 import Wipes from './pages/Wipes'
 import Checkout from './pages/Checkout'
+import Account from './pages/Account/Account'
+import AccountInfo from './pages/Account/layouts/AccountInfo'
+import OrderHistory from './pages/Account/layouts/OrderHistory'
 
 function App() {
   return (
@@ -19,6 +22,10 @@ function App() {
         <Route path='/size' element={<Size />} />
         <Route path="/wipes" element={<Wipes />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="" element={<Account />}>
+          <Route path="profile" element={<AccountInfo />} />
+          <Route path="order" element={<OrderHistory />} />
+        </Route>
       </Routes>
     </>
   )
