@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-// import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // Icons =====================>>>>>>>>>>>>>>>>
 import { FiShoppingCart } from "react-icons/fi";
 import { RxPerson } from "react-icons/rx";
@@ -36,9 +36,9 @@ export default function Navbar() {
         <div className={`${bgColor ? 'bg-white' : ''} w-screen fixed z-50 top-0`}>
             <div className="flex align-middle items-center justify-between py-3 w-[85vw] mx-auto">
                 {/* Logo */}
-                <div className="logo">
+                <Link to="/" className="logo">
                     <img src={Logo} alt="Logo" />
-                </div>
+                </Link>
                 {/* Mobile toggler */}
                 <div className='p-2 md:hidden flex'>
                     <AiOutlineMenu fontSize={'1.8em'} />
