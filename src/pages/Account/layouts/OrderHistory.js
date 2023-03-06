@@ -1,8 +1,6 @@
 import React from 'react'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 
-import Input from '../../../components/Input'
-import {Button} from '../../../components/Button'
 import img1 from '../../../assets/img/image 82.png'
 import img2 from '../../../assets/img/image 70(1).png'
 

@@ -5,7 +5,6 @@ import Navbar from '../components/Navbar'
 import SubHeader from '../components/SubHeader'
 import {Button} from '../components/Button'
 import {CheckoutStep} from '../components/CheckoutStep'
-import product1 from '../assets/img/Frame 82.png'
 import product2 from '../assets/img/Frame 83.png'
 
 

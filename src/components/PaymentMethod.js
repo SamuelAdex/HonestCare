@@ -1,12 +1,11 @@
 import React, {useState} from 'react'
 
 const PaymentMethod = ({pImg, ptitle, pdate, key}) => {
-    const [currentPayment, setCurrentPayment] = useState(null)
+    // const [currentPayment, setCurrentPayment] = useState(null)
     const [isActive, setIsActive] = useState(false)
     
   return (
-    <div onClick={()=>{ 
-        setCurrentPayment(key)
+    <div onClick={()=>{         
         setIsActive(!isActive)
         }} 
         className={`${isActive ? 'border-red bg-pink' : 'border-gray-600'} flex gap-2 border-2 rounded-md p-4 mb-4 cursor-pointer`}
